@@ -1,2 +1,4 @@
-# python-web-grupo17
-# python-web-grupo17
+# __Trabajo Practico Codo A Codo: *Python Full Stack*__
+
+## Grupo 17 Cohorte 24182 :alien:
+
