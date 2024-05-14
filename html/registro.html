@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Areco Print3D</title>
+    <link rel="icon" href="img\areco print.ico">
+</head>
+
+<body>
+    <h1><p>Areco Print3D!</p></h1>
+    <header>
+        <h1>Registrate!</h1>
+    </header>
+    <main>
+        <form action="index.html" method="post">
+        <div>
+            <label for="nombreUsuario">Nombre</label>
+            <input type="text" id="nombreUsuario" name="nombreUsuarioIngresado">
+        </div>
+
+        <div>
+            <label for="apellidoUsuario">Apellido</label>
+            <input type="text" id="apellidoUsuario" name="apellidoUsuarioingresado">
+        </div>
+
+        <div>
+            <label for="emailUsuario">Email</label>
+            <input type="email" id="emailUsuario" name="emailUsuarioRegistrado" placeholder="nombre@email.com">
+        </div>
+
+        <div>
+            <label for="contraseñaUsuario">Contraseña</label>
+            <input type="password" id="contraseñaUsuario" name="contraseñaUsuarioIngresado" minlength="6" maxlength="12">
+        </div>
+
+        <div>
+            <label for="nacimientoUsuario">Fecha de nacimiento</label>
+            <input type="date" id="nacimientoUsuario" name="nacimientoUsuarioIngresadoado">
+        </div>
+
+        <div>
+            <label for="paisUsuario">Pais de residencia</label>
+            <select id="paisUsuario" name="paisUsuarioIngresado">
+                <option value="BR">Brasil</option>
+                <option value="AR">Argentina</option>
+                <option value="UR" selected>Uruguay</option>
+                <option value="PA">Paraguay</option>
+            </select> 
+        </div>
+
+        <div>
+            <input type="checkbox" id="terminos" name="terminosyCondiciones" value="1">
+            <label for="terminos">Acepto terminos y condiciones</label>
+        </div>
+
+        <div>
+            <input type="submit" value="Registrarme"> 
+        </div>
+
+        </form>
+    </main>
+</body>
+
+<footer> Nuestro contacto <br>
+    <h4><a href="https://www.instagram.com/areco_print3d/"> Instagram </a></h4>
+    <br>
+    <h4><a href="https://wa.me/542326424722/?text=urlencodedtext"> Whatsapp </a></h4>
+</footer>
+</html>
