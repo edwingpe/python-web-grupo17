@@ -25,7 +25,7 @@
                         <li><a href="#">Nosotros</a></li>
                         <li><a href="#">Servicios</a></li>
                         <li><a href="#">Galeria</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </nav>
                 <!-- <button class="button">Cotizá</button> -->
@@ -64,15 +64,50 @@
         <section class="padding-block-900">
         <!-- Opiniones -->
         </section>
+
+
         <!-- Formulario de contacto  -->
-        <section class="bg-secondary padding-block-700 ff-body">
+        <section class="bg-secondary padding-block-700 ff-body" id="contacto">
             <div class="container">
                 <div class="even-columns">
                     <div>
                         <p class="fs-primary-heading fw-bold text-neutral">Charla con nosotros</p>
                     </div>
                     <div>
-                        Formulario de contacto
+                        <h2>Formulario de contacto</h2>
+                        <h3>Solicite su presupuesto hoy mismo y uno de nuestros representantes se pondrá en contacto con usted a la brevedad</h3>
+                        <form action="#" method="post">
+                            <div>
+                                <label for="nombreCliente">Nombre</label>
+                                <input type="text" id="nombreCliente" name="nombreClienteIngresado" placeholder="Nombre">
+                            </div>
+                            <div>
+                                <label for="apellidoCliente">Apellido</label>
+                                <input type="text" id="apellidoCliente" name="apellidoClienteIngresado"  placeholder="Apellido">
+                            </div>
+                            <div>
+                                <label for="emailCliente">Correo electronico</label>
+                                <input type="email" id="emailCliente" name="emailClienteIngresado" placeholder="ejemplo@correo.com">
+                            </div>
+                            <div>
+                                <label for="consultaCliente">Consulta</label>
+                                <input type="text" id="consultaCliente" name="consultaCliente">
+                            </div>
+                            <div>
+                                <label for="fechaCliente">Fecha en que necesita el producto</label>
+                                <input type="date" id="fechaCliente" name="fechaClienteIngresado">
+                            </div>
+                            <div>
+                                <label for="paisCliente">País de residencia</label>
+                                <select id="paisCliente" name="paisClienteIngresado">
+                                    <option value="" selected>-- Seleccione un país --</option>
+                                    <option value="AR">Argentina</option>
+                                    <option value="CO">Colombia</option>
+                                </select>
+                            </div>
+                            <!-- Botón de Envío -->
+                            <input type="submit" value="ENVIAR">
+                        </form>
                     </div>
                 </div>
 
@@ -80,23 +115,62 @@
 
         </section>
     </main>
+
     <footer class="bg-primary text-neutral padding-block-700">
         <div class="container">
             <div class="even-columns">
+                <a href="#"><img src="/assets/logo-white-small.png" alt="areco_print_logo" width="50%"></a>
+                
+                <div class="">     
+                    <h3>Contactanos</h3>
+                    <p>Ubicación: Carbajal 392</p>
+                    <p>Teléfono: <a href="tel:+2326424722">2326424722</a></p>
+                    <p>Email: <a href="mailto:Cheliagustin@gmail.com">Cheliagustin@gmail.com</a></p>
+                    <p>WhatsApp: <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">1234567890</a></p>
+                </div>
+
                 <div>
-                    <a href="#"><img src="/assets/logo-white-small.png" alt="areco_print_logo" width="50%"></a>
+                    <h3>Síguenos</h3>
                     <ul role="list" aria-label="social links">
-                        <li><a aria-label="facebook" href="#"></a></li>
-                        <li><a aria-label="youtube" href="#"></a></li>
-                        <li><a aria-label="instagram" href="#"></a></li>
-                        <li><a aria-label="x" href="#"></a></li>
+                        <li><a aria-label="instagram" href="https://www.instagram.com/areco_print3d/" target="_blank">Instagram</a></li>
                     </ul>
                 </div>
-                <div></div>
-                <div></div>
+                <div class="container small fw-normal">
+                    <h3>Enlaces útiles</h3>
+                    <ul class="nav justify-content-center justify-content-lg-between align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Métodos de Pago</h3>
+                    <div class="metodoPago">
+                        <img src="#" alt="Debito Visa">
+                        <img src="#" alt="Mercado Pago">
+                        <img src="#" alt="Efectivo">
+                        <img src="#" alt="Transferencias">
+                    </div>
+                </div>
             </div>
         </div>
+        <div>
+            <p>copyright @ 2024 ArecoPrint3D. Todos los derechos reservados.</p>
+        </div>
     </footer>
+
     <script type="module" src="/js/main.js"></script>    
 </body>
 </html>
