@@ -106,36 +106,42 @@
                         <p class="fs-primary-heading fw-bold text-neutral">Charla con nosotros</p>
                     </div>
                     <div>
-                        <h3>Solicite su presupuesto hoy mismo y uno de nuestros representantes se pondrá en contacto con usted a la brevedad</h3>
-                        <form action="#" method="post">
+                        <h3 id="tituloFormulario">Solicite su presupuesto hoy mismo y uno de nuestros representantes se pondrá en contacto con usted a la brevedad</h3>
+                        <form action="#" method="post" id="formularioContacto">
                             <div>
                                 <label for="nombreCliente">Nombre</label>
-                                <input type="text" id="nombreCliente" name="nombreClienteIngresado" placeholder="Nombre">
+                                <input type="text" id="nombreCliente" name="nombreClienteIngresado" placeholder="Nombre" required>
                             </div>
                             <div>
                                 <label for="apellidoCliente">Apellido</label>
-                                <input type="text" id="apellidoCliente" name="apellidoClienteIngresado"  placeholder="Apellido">
+                                <input type="text" id="apellidoCliente" name="apellidoClienteIngresado"  placeholder="Apellido"  required>
                             </div>
                             <div>
                                 <label for="emailCliente">Correo electronico</label>
-                                <input type="email" id="emailCliente" name="emailClienteIngresado" placeholder="ejemplo@correo.com">
-                            </div>
-                            <div>
-                                <label for="consultaCliente">Consulta</label>
-                                <input type="text" id="consultaCliente" name="consultaCliente">
-                            </div>
-                            <div>
-                                <label for="fechaCliente">Fecha en que necesita el producto</label>
-                                <input type="date" id="fechaCliente" name="fechaClienteIngresado">
+                                <input type="email" id="emailCliente" name="emailClienteIngresado" placeholder="ejemplo@correo.com"  required>
                             </div>
                             <div>
                                 <label for="paisCliente">País de residencia</label>
-                                <select id="paisCliente" name="paisClienteIngresado">
+                                <select id="paisCliente" name="paisClienteIngresado" required>
                                     <option value="" selected>-- Seleccione un país --</option>
                                     <option value="AR">Argentina</option>
-                                    <option value="CO">Colombia</option>
+                                    <option value="CO">Chile</option>
+                                    <option value="CO">Uruguay</option>
                                 </select>
                             </div>
+                            <div>
+                                <label for="fechaCliente">Fecha en que necesita el producto</label>
+                                <input type="date" id="fechaCliente" name="fechaClienteIngresado"  required>
+                            </div>
+                            <div>
+                                <label for="consultaCliente">Consulta</label>
+                                <input type="text" id="consultaCliente" name="consultaCliente"  required>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="terminos" name="terminos" required>
+                                <label for="terminos">Acepto los términos y condiciones</label>
+                            </div>
+
                             <!-- Botón de Envío -->
                             <input type="submit" value="ENVIAR">
                         </form>

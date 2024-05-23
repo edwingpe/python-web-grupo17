@@ -294,6 +294,10 @@ svg {
 
 /* Estilos para el formulario de contacto */
 
+#tituloFormulario {
+    margin-bottom: 2rem;
+}
+
 #contacto form {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -316,11 +320,15 @@ svg {
     border: 1px solid var(--platinum-2);
 }
 
+#consultaCliente {
+    
+}
+
 #contacto form input[type="submit"] {
     background-color: var(--orange-web);
     color: var(--platinum);
     font-weight: var(--fw-bold);
-    border: none;
+    border: 1px solid var(--platinum-2);
     padding: 0.75rem 1.5rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -329,3 +337,8 @@ svg {
 #contacto form input[type="submit"]:hover {
     background-color: var(--orange-web-light);
 }
+
+
+/* Estilos para el footer */
+
+
