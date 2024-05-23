@@ -341,4 +341,26 @@ svg {
 
 /* Estilos para el footer */
 
+footer {
+    background-color: var(--rich-black);
+    color: var(--platinum);
+    padding: var(--size-700) 0;
+}
 
+footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+footer .copyright {
+    text-align: center;
+    margin-top: var(--size-600);
+}
