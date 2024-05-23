@@ -21,11 +21,11 @@
                 </button>
                 <nav class="primary-navigation" id="primary-navigation">
                     <ul aria-label="Primary" role="list" class="nav-list" >
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="#">Galeria</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </nav>
                 <!-- <button class="button">Cotizá</button> -->
@@ -34,6 +34,7 @@
     </header>
     <main>
         <section class="padding-block-900">
+<<<<<<< HEAD
             <div class="container">
                 <div class="even-columns">
                     <div>
@@ -46,6 +47,11 @@
 
                 </div>
                 
+=======
+            <div class="container" id="home">
+                <h1 class="fs-primary-heading fw-bold ff-heading">Imprime tu creatividad con nosotros.</h1>
+                <p class="fs-secondary-heading fw-semi-bold ff-body">Innovación, Arte y Calidad: Nuestra impresión 3D redefine los límites.</p>
+>>>>>>> d8d9b34818de5d7c848555fd77b84a3e1023ee07
             </div>
             
         <!-- Seccion nosotros, pequena descripcion de la empresa -->
@@ -54,7 +60,7 @@
             <div class="container">
                 <div class="even-columns">
                     <div>
-                        <h2 class="ff-heading fs-secondary-heading fw-bold">Nosotros</h2>
+                        <h2 class="ff-heading fs-secondary-heading fw-bold" id="nosotros">Nosotros</h2>
                         <!-- Imagen de la empresa u otra -->
                         <img src="" alt="">
                     </div>
@@ -66,22 +72,73 @@
         </section>
             
         <!-- Seccion Servicios, servicios ofrecidos por Areco 3D -->
-        <section class="padding-block-900">
-            <!-- En desarrollo -->
+        <section class="padding-block-900" id="servicios">
+            <div class="container">
+                <h2 class="ff-heading fs-secondary-heading fw-bold">Servicios</h2>
+                <p class="ff-body">Ofrecemos una amplia gama de servicios de diseño e impresión 3D, incluyendo:</p>
+                <ul class="service-list">
+                    <li>Diseño personalizado de modelos 3D.</li>
+                    <li>Impresión 3D en una variedad de materiales.</li>
+                    <li>Prototipado rápido para proyectos de ingeniería.</li>
+                    <li>Asesoramiento y consultoría en diseño e impresión 3D.</li>
+                </ul>
+            </div>
+            <p> Ejemplo de diseño y de impresion 3D que realizamos</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZhOK5nxlon4?si=ickertdj6ME9_LS5"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div>
+        </section>
+
         </section>
         <!-- Galeria trabajos realizados -->
-        <section class="padding-block-900">
-        <!-- Opiniones -->
+        <section class="padding-block-900" id="galeria">
+        <h2 class="ff-heading fs-secondary-heading fw-bold">Trabajos Realizados</h2>
         </section>
+
+
         <!-- Formulario de contacto  -->
-        <section class="bg-secondary padding-block-700 ff-body">
+        <section class="bg-secondary padding-block-700 ff-body" id="contacto">
             <div class="container">
                 <div class="even-columns">
                     <div>
                         <p class="fs-primary-heading fw-bold text-neutral">Charla con nosotros</p>
                     </div>
                     <div>
-                        Formulario de contacto
+                        <h3>Solicite su presupuesto hoy mismo y uno de nuestros representantes se pondrá en contacto con usted a la brevedad</h3>
+                        <form action="#" method="post">
+                            <div>
+                                <label for="nombreCliente">Nombre</label>
+                                <input type="text" id="nombreCliente" name="nombreClienteIngresado" placeholder="Nombre">
+                            </div>
+                            <div>
+                                <label for="apellidoCliente">Apellido</label>
+                                <input type="text" id="apellidoCliente" name="apellidoClienteIngresado"  placeholder="Apellido">
+                            </div>
+                            <div>
+                                <label for="emailCliente">Correo electronico</label>
+                                <input type="email" id="emailCliente" name="emailClienteIngresado" placeholder="ejemplo@correo.com">
+                            </div>
+                            <div>
+                                <label for="consultaCliente">Consulta</label>
+                                <input type="text" id="consultaCliente" name="consultaCliente">
+                            </div>
+                            <div>
+                                <label for="fechaCliente">Fecha en que necesita el producto</label>
+                                <input type="date" id="fechaCliente" name="fechaClienteIngresado">
+                            </div>
+                            <div>
+                                <label for="paisCliente">País de residencia</label>
+                                <select id="paisCliente" name="paisClienteIngresado">
+                                    <option value="" selected>-- Seleccione un país --</option>
+                                    <option value="AR">Argentina</option>
+                                    <option value="CO">Colombia</option>
+                                </select>
+                            </div>
+                            <!-- Botón de Envío -->
+                            <input type="submit" value="ENVIAR">
+                        </form>
                     </div>
                 </div>
 
@@ -89,23 +146,62 @@
 
         </section>
     </main>
+
     <footer class="bg-primary text-neutral padding-block-700">
         <div class="container">
             <div class="even-columns">
+                <a href="#"><img src="/assets/logo-white-small.png" alt="areco_print_logo" width="50%"></a>
+                
+                <div class="">     
+                    <h3>Contactanos</h3>
+                    <p>Ubicación: Carbajal 392</p>
+                    <p>Teléfono: <a href="tel:+2326424722">2326424722</a></p>
+                    <p>Email: <a href="mailto:Cheliagustin@gmail.com">Cheliagustin@gmail.com</a></p>
+                    <p>WhatsApp: <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">1234567890</a></p>
+                </div>
+
                 <div>
-                    <a href="#"><img src="/assets/logo-white-small.png" alt="areco_print_logo" width="50%"></a>
+                    <h3>Síguenos</h3>
                     <ul role="list" aria-label="social links">
-                        <li><a aria-label="facebook" href="#"></a></li>
-                        <li><a aria-label="youtube" href="#"></a></li>
-                        <li><a aria-label="instagram" href="#"></a></li>
-                        <li><a aria-label="x" href="#"></a></li>
+                        <li><a aria-label="instagram" href="https://www.instagram.com/areco_print3d/" target="_blank">Instagram</a></li>
                     </ul>
                 </div>
-                <div></div>
-                <div></div>
+                <div class="container small fw-normal">
+                    <h3>Enlaces útiles</h3>
+                    <ul class="nav justify-content-center justify-content-lg-between align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galeria">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Métodos de Pago</h3>
+                    <div class="metodoPago">
+                        <img src="#" alt="Debito Visa">
+                        <img src="#" alt="Mercado Pago">
+                        <img src="#" alt="Efectivo">
+                        <img src="#" alt="Transferencias">
+                    </div>
+                </div>
             </div>
         </div>
+        <div>
+            <p>copyright @ 2024 ArecoPrint3D. Todos los derechos reservados.</p>
+        </div>
     </footer>
+
     <script type="module" src="/js/main.js"></script>    
 </body>
 </html>

@@ -292,3 +292,40 @@ svg {
     background-color: var(--orange-web);
 }
 
+/* Estilos para el formulario de contacto */
+
+#contacto form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+#contacto form div {
+    margin-bottom: 1.5rem; 
+}
+
+#contacto form label {
+    font-weight: var(--fw-bold);
+}
+
+#contacto form input,
+#contacto form select {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--platinum-2);
+}
+
+#contacto form input[type="submit"] {
+    background-color: var(--orange-web);
+    color: var(--platinum);
+    font-weight: var(--fw-bold);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contacto form input[type="submit"]:hover {
+    background-color: var(--orange-web-light);
+}
