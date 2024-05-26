@@ -13,7 +13,7 @@
     <header class="primary-header">
         <div class="container">
             <div class="nav-wrapper">
-                <a href="#"><img src="/assets/logo-black-small.png" alt="areco_print_logo" style="width: 20%;"></a>
+                <img src="/assets/logo-white-small.png" alt="areco_print_logo" style="width: 120px;">
                 <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"> 
                     <img class="icon-hamburger" src="/assets/icon-hamburger.svg" alt="" aria-hidden="true">
                     <img class="icon-close" src="/assets/icon-close.svg" alt="" aria-hidden="true">
@@ -25,14 +25,12 @@
                         <li><a href="#nosotros">Nosotros</a></li>
                         <li><a href="#servicios">Servicios</a></li>
                         <li><a href="#galeria">Galeria</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </nav>
+                <button class="button">Contacto</button>
                 <!-- <button class="button">Cotizá</button> -->
             </div>
         </div>
-    </header>
-    <main>
         <section class="padding-block-900">
             <div class="container">
                 <div class="even-columns">
@@ -50,16 +48,19 @@
             
         <!-- Seccion nosotros, pequena descripcion de la empresa -->
         </section>
-        <section class="padding-block-900">
+    </header>
+    <main>
+        
+        <section class="padding-block-900" id="nosotros">
             <div class="container">
                 <div class="even-columns">
                     <div>
-                        <h2 class="ff-heading fs-secondary-heading fw-bold" id="nosotros">Nosotros</h2>
+                        <h2 class="ff-heading fs-primary-heading fw-bold" id="nosotros">Quienes somos</h2>
                         <!-- Imagen de la empresa u otra -->
                         <img src="" alt="">
                     </div>
                     <div>
-                        <p class="ff-heading fw-bold">Fundado en 2017, Areco Print 3D es un estudio de diseño e impresión 3D profesional que se enorgullece de ofrecer sus servicios en todo el país. Nuestro equipo está compuesto por profesionales experimentados y dedicados. No solo nos esforzamos por satisfacer tus necesidades, sino también por superar tus expectativas en lo que respecta a un servicio confiable de impresión 3D.</p>
+                        <p class="ff-heading fw-bold fs-600">Fundado en 2017, Areco Print 3D es un estudio de diseño e impresión 3D profesional que se enorgullece de ofrecer sus servicios en todo el país. Nuestro equipo está compuesto por profesionales experimentados y dedicados. No solo nos esforzamos por satisfacer tus necesidades, sino también por superar tus expectativas en lo que respecta a un servicio confiable de impresión 3D.</p>
                     </div>
                 </div>
             </div>
@@ -68,27 +69,55 @@
         <!-- Seccion Servicios, servicios ofrecidos por Areco 3D -->
         <section class="padding-block-900" id="servicios">
             <div class="container">
-                <h2 class="ff-heading fs-secondary-heading fw-bold">Servicios</h2>
-                <p class="ff-body">Ofrecemos una amplia gama de servicios de diseño e impresión 3D, incluyendo:</p>
-                <ul class="service-list">
-                    <li>Diseño personalizado de modelos 3D.</li>
-                    <li>Impresión 3D en una variedad de materiales.</li>
-                    <li>Prototipado rápido para proyectos de ingeniería.</li>
-                    <li>Asesoramiento y consultoría en diseño e impresión 3D.</li>
-                </ul>
+                <h2 class="ff-heading fs-primary-heading fw-bold" style="text-align: center;">Servicios</h2>
+                <div class="services-box">
+                    <div class="card ff-heading  fw-bold text-neutral">
+                        <img src="/assets/paleta.png" alt="">
+                        <h4>DISEÑO 3D</h4>
+                        <p class="fw-semi-bold">Utilizamos el mas complejo software para crear el diseño que necesites.</p>
+                    </div>
+                    <div class="card ff-heading  fw-bold text-neutral">                            
+                        <img src="/assets/imprimir.png" alt="">
+                        <h4>IMPRESION 3D</h4>
+                        <p class="fw-semi-bold">Contamos con impresoras 3D FDM profesionales para fabricar cualquier idea que tengas en mente.</p>
+                    </div>
+                    <div class="card ff-heading  fw-bold text-neutral">
+                        <img src="/assets/salvavidas.png" alt="">
+                        <h4>ASESORAMIENTO</h4>
+                        <p class="fw-semi-bold">Ofrecemos
+                                asesoramiento y ayuda para resolver
+                                cualquier duda o problema que tengas en el camino.</p>
+                    </div>
+                    <div class="card ff-heading  fw-bold text-neutral">                         
+                        <img src="/assets/brazo-robotico.png" alt="">
+                        <h4>PROTOTIPADO</h4>
+                        <p class="fw-semi-bold">Utilizamos el mas complejo software para crear el diseño que necesites.</p>
+                    </div>
+                </div>
             </div>
-            <p> Ejemplo de diseño y de impresion 3D que realizamos</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZhOK5nxlon4?si=ickertdj6ME9_LS5"
+        
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ZhOK5nxlon4?si=ickertdj6ME9_LS5"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
         <div>
         </section>
 
-        </section>
         <!-- Galeria trabajos realizados -->
         <section class="padding-block-900" id="galeria">
-        <h2 class="ff-heading fs-secondary-heading fw-bold">Trabajos Realizados</h2>
+            <h2 class="ff-heading fs-primary-heading fw-bold" style="text-align: center;">Trabajos Realizados</h2>
+            <article class="gallery">
+                <img src="/assets/img/1.jpg" alt="spider-man 3d">
+                <img src="/assets/img/2.jpg" alt="ironman mate">
+                <img src="/assets/img/3.jpg" alt="ironman pose">
+                <img src="/assets/img/4.jpg" alt="eva">
+                <img src="/assets/img/5.jpg" alt="portavasos 3d">
+                <img src="/assets/img/6.jpg" alt="groot">
+                <img src="/assets/img/7.jpg" alt="maceta_3d_white">
+                <img src="/assets/img/8.jpg" alt="dartvader mate">
+                <img src="/assets/img/9.jpg" alt="alien pikachu">
+                <img src="/assets/img/10.jpg" alt="walle">
+            </article>
         </section>
 
 
@@ -150,7 +179,7 @@
     <footer class="bg-primary text-neutral padding-block-700">
         <div class="container">
             <div class="even-columns">
-                <a href="#"><img src="/assets/logo-white-small.png" alt="areco_print_logo" width="50%"></a>
+                <a href="#"><img src="/assets/logo-white-small.png" alt="areco_print_logo" width="120px"></a>
                 
                 <div class="">     
                     <h3>Contactanos</h3>
@@ -168,7 +197,7 @@
                 </div>
                 <div class="container small fw-normal">
                     <h3>Enlaces útiles</h3>
-                    <ul class="nav justify-content-center justify-content-lg-between align-items-center">
+                    <ul role="list" class="nav justify-content-center justify-content-lg-between align-items-center">
                         <li class="nav-item">
                             <a class="nav-link" href="#home">Home</a>
                         </li>
@@ -195,9 +224,6 @@
                         <img src="#" alt="Transferencias">
                     </div>
                 </div>
-            </div>
-            <div>
-                <p>copyright @ 2024 ArecoPrint3D. Todos los derechos reservados.</p>
             </div>
         </div>
         <div class="copyright">
