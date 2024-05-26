@@ -66,7 +66,8 @@
 }
 
 ul[role="list"],
-ol[role="list"] {
+ol[role="list"],
+li > a {
   list-style: none;
   text-decoration: none;
 }
@@ -331,7 +332,7 @@ svg {
     gap: 1rem;
     margin-top: 5rem;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
 }
@@ -416,10 +417,6 @@ svg {
     border: 1px solid var(--platinum-2);
 }
 
-#consultaCliente {
-    
-}
-
 #contacto form input[type="submit"] {
     background-color: var(--orange-web);
     color: var(--platinum);
@@ -443,20 +440,54 @@ footer {
     padding: var(--size-700) 0;
 }
 
-footer .container {
+.footer-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+
+    a > img {
+        margin: 2rem 0;
+    }
+}
+
+.footer-second-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.map-box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap:1rem;
 }
 
-footer ul {
-    list-style: none;
-    padding-left: 0;
-    text-align: center;
+.social-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-footer .copyright {
-    text-align: center;
-    margin-top: var(--size-600);
+.social {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+.footer-navigation{
+    align-self: flex-start;
+    text-align: end; 
+    ul > li {
+        padding-top: 1rem;
+        a {
+            color: #dfe0dc;
+            font-weight: var(--fw-bold);
+        }
+
+        a:hover {
+            color: var(--orange-web);
+        }
+    }
 }
