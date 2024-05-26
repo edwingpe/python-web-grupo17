@@ -32,4 +32,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
             event.preventDefault();
             alert('Por favor, complete todos los campos obligatorios.');
         }
-    });
+    })
+})
