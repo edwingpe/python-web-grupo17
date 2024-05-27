@@ -105,6 +105,20 @@ svg {
     gap: 1rem;
 }
 
+.header-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 2rem;
+    text-align: center;
+
+    span {
+        color: var(--orange-web);
+    }
+}
+
 @media (min-width: 50em){
     .even-columns{
         grid-auto-flow: column;
